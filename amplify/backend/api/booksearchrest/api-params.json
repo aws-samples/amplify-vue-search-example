@@ -1,0 +1,41 @@
+{
+    "paths": [
+        {
+            "name": "/book",
+            "lambdaFunction": "booksearchrest",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "booksearchrest",
+    "apiName": "booksearchrest",
+    "functionArns": [
+        {
+            "lambdaFunction": "booksearchrest"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-amplifyvuesearchexam-test-32836-authRole",
+        "unAuthRoleName": "amplify-amplifyvuesearchexam-test-32836-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "booksearchrest",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

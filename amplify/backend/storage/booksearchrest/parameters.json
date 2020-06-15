@@ -1,0 +1,7 @@
+{
+    "tableName": "booksearchrest",
+    "partitionKeyName": "author",
+    "partitionKeyType": "S",
+    "sortKeyName": "releaseDate",
+    "sortKeyType": "S"
+}

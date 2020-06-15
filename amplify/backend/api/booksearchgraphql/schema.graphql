@@ -1,0 +1,8 @@
+type Book @model @searchable {
+  id: ID!
+  title: String!
+  author: String!
+  price: Int!
+  description: String
+  releaseDate: AWSDate
+}
